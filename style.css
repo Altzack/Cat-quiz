@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 1%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    /* color: #371d0d; */
+    background-color: #97c9f0;
+    ;
+}
+
+h1 {
+    color: #000;
+}
+
+.header {
+    text-align: center;
+}
+
+.topCat {
+    max-width: 15em;
+}
+
+.header li {
+    display: inline-block;
+    margin: 1em;
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.bkgBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    background: url(images/background.jpg) fixed;
+    /* border: 0.1em #07070A solid; */
+}
+
+.startQuiz,
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    border: 0.1em #07070A solid;
+    background-color: #1d6888;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.images {
+    margin-bottom: 0.5em;
+    width: 90%;
+    max-width: 240px;
+}
+
+h1,
+h3,
+legend {
+    margin-bottom: 0.5em;
+}
+
+.answerOption {
+    margin-top: 0.5em;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 0.1em #07773e solid;
+    background-color: #0a8f4a;
+    color: #000;
+}
+
+.button:hover,
+.button:active {
+    background-color: #14cc6d;
+    ;
+    color: #000;
+
+}
+
+.final {
+    display: block;
+}
+
+@media only screen and (min-width: 320px) {
+    .topCat {
+        width: 45%;
+    }
+
+    .bkgBox {
+        width: 90%;
+        height: 31em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+
+    .box {
+        width: 90%;
+        height: 90%;
+    }
+
+    .images {
+        width: 85%;
+    }
+
+    .button {
+        margin-top: 0.5em;
+        font-size: 1em;
+        width: 8em;
+        height: 2.5em;
+    }
+
+    h1,
+    h3,
+    legend {
+        font-size: 1em;
+    }
+
+    .header li {
+        font-size: 1em;
+    }
+
+    .topText {
+        font-size: 0.9em;
+        margin: 0.1em;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .bkgBox {
+        width: 29.5em;
+        height: 31.5em;
+        padding-top: 2.6em;
+        padding-bottom: 2.6em;
+    }
+
+    .box {
+        width: 85%;
+        height: 98%;
+    }
+
+    .button {
+        margin-top: 1em;
+        font-size: 1em;
+        width: 10em;
+        height: 2.5em;
+    }
+
+    h1,
+    h3,
+    legend {
+        font-size: 1em;
+    }
+
+    .topText {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .header li {
+        margin: 1em;
+        font-size: 1.3em;
+    }
+
+    .bkgBox {
+        width: 35em;
+        height: 38em;
+    }
+
+    .box {
+        width: 85%;
+        height: 95%;
+    }
+
+    h1,
+    h3,
+    legend {
+        font-size: 1.3em;
+    }
+
+    .topText {
+        font-size: 1em;
+    }
+
+    .button {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 12em;
+        font-size: 1.2em;
+    }
+}

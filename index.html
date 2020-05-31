@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat quiz app</title>
+    <meta name="description" type="A quiz app about cats." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <main role="main" class="container">
+      <header role="banner" class="header">
+        <!-- <section>
+        <a href="index.html">
+          <img class="" src="images/top.png" alt="" />
+        </a>
+      </section> -->
+        <section>
+          <ul>
+            <li class="topText">
+              Question: <span class="questionNumber">0</span>/5
+            </li>
+            <li class="topText">
+              Score:
+              <span class="score">0</span>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <section role="region" class="bkgBox">
+        <section class="startQuiz box">
+          <h1>How much do you know about cats?</h1>
+          <img src="images/fatcat.jpg" alt="" class="images" />
+          <button type="button" class="startButton button">Start</button>
+        </section>
+        <section class="questionBox box altBox"></section>
+        <section class="response box altBox"></section>
+        <section class="final box altBox"></section>
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="store.js"></script>
+  </body>
+</html>
