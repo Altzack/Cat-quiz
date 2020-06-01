@@ -98,7 +98,7 @@ function renderQuestion(questionIndex) {
 function correctAnswer() {
   $('.response').html(
     `<h3>Your answer is correct!</h3>
-    <img src="images/coolcat.jpg" alt="cat wearing glasses" class="images" width="200px">
+    <img src="images/glassescat.jpg" alt="cat wearing glasses" class="images" width="200px">
       <p class="sizeMe">Nice one!</p>
       <button type="button" class="nextButton button">Next</button>`,
   );
@@ -109,7 +109,7 @@ function correctAnswer() {
 function wrongAnswer() {
   $('.response').html(
     `<h3>That's the wrong answer...</h3>
-    <img src="images/grumpy.jpg" alt="grump cat" class="images" width="200px">
+    <img src="images/crycat.jpg" alt="grump cat" class="images" width="200px">
     <p class="sizeMe">Correct answer:</p>
     <p class="sizeMe">${STORE[questionNumber].correctAnswer}</p>
     <button type="button" class="nextButton button">Next</button>`,
