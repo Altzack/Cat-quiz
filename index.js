@@ -4,6 +4,16 @@ let questionNumber = 0;
 function startPage() {
   $('.altBox').hide();
 }
+
+function generateQuestion() {
+  if (questionNumber < STORE.length) {
+    return renderQuestion(questionNumber);
+  }
+  $('.questionBox').hide();
+  finalScore();
+  $('.questionNumber').text(5);
+}
+
 function startQuiz() {
   $('.altBox').hide();
   $('.startQuiz').on('click', '.startButton', (e) => {
@@ -56,7 +66,7 @@ function nextQuestion() {
 
 function restartQuiz() {
   $('.bkgBox').on('click', '.restartButton', (e) => {
-    event.preventDefault();
+    e.preventDefault();
     resetStats();
     $('.altBox').hide();
     $('.startQuiz').show();
@@ -83,15 +93,6 @@ function renderQuestion(questionIndex) {
     '<button type="submit" class="submitButton button"> Submit</button > ',
   ).appendTo(fieldSelector);
   return formMaker;
-}
-
-function generateQuestion() {
-  if (questionNumber < STORE.length) {
-    return renderQuestion(questionNumber);
-  }
-  $('.questionBox').hide();
-  finalScore();
-  $('.questionNumber').text(5);
 }
 
 function correctAnswer() {
