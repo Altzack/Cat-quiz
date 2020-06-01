@@ -11,7 +11,7 @@ function generateQuestion() {
   }
   $('.questionBox').hide();
   finalScore();
-  $('.questionNumber').text(5);
+  $('.questionNumber').text(10);
 }
 
 function startQuiz() {
@@ -123,7 +123,7 @@ function finalScore() {
   // }
 
   return $('.final').html(`
-    <h3>Your score is ${score}/5</h3>
+    <h3>Your score is ${score}/10</h3>
      <button type="submit" class="restartButton button">Restart</button>`);
 }
 function makeQuiz() {
